@@ -1,6 +1,6 @@
 <script>
     // set the dimensions and margins of the graph
-    var margin = {top: 30, right: 30, bottom: 70, left: 60},
+    var margin = {top: 30, right: 30, bottom: 70, left: 60{"}"},
         width = 460 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
     
@@ -42,7 +42,7 @@
         .data(data.treasury)
         .enter()
         .append("rect")
-          .attr("x", function(d) { return x(d.systemSurplus, d.mkrValue, d.aaveValue, d.ensValue); })
+          .attr("x", function(d) { return x(d.systemSurplus, d.mkrValue, d.aaveValue, d.ensValue); {"}"})
           .attr("y", function(d) { return y(d.Value); })
           .attr("width", x.bandwidth())
           .attr("height", function(d) { return height - y(d.Value); })

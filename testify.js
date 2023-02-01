@@ -14,6 +14,7 @@ var svg = d3.select("#my_dataviz")
 
 // Parse the Data
 d3.json("https://api.makerburn.com/growth/status", function(data) {
+  console.log(data);
 
   // Set the x and y scales
   var x = d3.scaleBand()
